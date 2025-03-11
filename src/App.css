@@ -1,0 +1,7 @@
+body,
+html {
+  background-color: #f4f5f8;
+}
+.rs-panel-header {
+  padding: 4px !important;
+}
