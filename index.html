@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="" />
+    <title id="dynamic-title"></title>
+    <script type="module" crossorigin src="/assets/index-jFRNIe_5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CRkFVQP6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Dynamic changes using localStorage
+      document.addEventListener("DOMContentLoaded", () => {
+        const storeName = localStorage.getItem("storeName") || "";
+        const storeLogo = localStorage.getItem("storeImg") || "";
+
+        // Update title and favicon dynamically
+        document.getElementById("dynamic-title").textContent = storeName;
+
+        const favicon = document.getElementById("dynamic-favicon");
+        favicon.href = storeLogo;
+      });
+    </script>
+  </body>
+</html>
